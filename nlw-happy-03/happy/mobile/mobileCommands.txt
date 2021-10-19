@@ -1,0 +1,13 @@
+
+expo init mobile
+yarn start
+expo install react-native-maps
+expo install @expo-google-fonts/nunito expo-font
+yarn add @react-navigation/native
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+yarn add @react-navigation/stack
+yarn add axios
+expo install expo-image-picker
+
+(extra - lottie + expo)
+expo install lottie-react-native
