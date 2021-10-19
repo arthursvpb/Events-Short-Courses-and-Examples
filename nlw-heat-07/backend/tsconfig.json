@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    // Com o TS, o strict do JS não é muito utilizado
+    "strict": false,
+    "skipLibCheck": true
+  }
+}
