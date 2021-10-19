@@ -1,0 +1,89 @@
+{
+  "bg": "https://images.unsplash.com/photo-1595154038281-4beb9195415b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80",
+  "title": "Chemistry Quiz",
+  "description": "Test your Chemistry knowledge!",
+  "questions": [
+    {
+      "image": "https://media1.tenor.com/images/a866d1334a0a635eeda88c371caee50a/tenor.gif",
+      "title": "A mix of 70% ethanol is used to eliminate coronavirus from surfaces, like hands. This mixture is composed by:",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "70% water and 30% ethanol",
+        "70% ethanol and 30% butanol",
+        "70% ethanol and 30% water",
+        "70% acetone and 30% ethanol"
+      ]
+    },
+    {
+      "image": "https://archives.library.illinois.edu/erec/University%20Archives/1505050/WWWroot/webOrganic/Functional%20Groups/Hydrocarbons/butane.gif",
+      "title": "Methane (biological or natural gas) is used as “residence gas”, and butane (LPG) is used as “bottled-gas” in cylinders. These hydrocarbons’ molecular formulas are, respectively:",
+      "description": "",
+      "answer": 0,
+      "alternatives": ["CH\u2084 and C\u2084H\u2081\u2080", "CH\u2084OH and C\u2084H\u2084NH\u2082", "C\u2084H\u2081\u2080 and CH\u2084", "C\u2082H\u2086 and C\u2083H\u2088"]
+    },
+    {
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Sucrose.gif",
+      "title": "What is the mass of 1 mol of sucrose:",
+      "description": "",
+      "answer": 2,
+      "alternatives": [
+        "342 g/mol",
+        "180 g/mol",
+        "342 g",
+        "180 g"
+      ]
+    },
+    {
+      "image": "https://publiclab.org/system/images/photos/000/011/356/original/H2CO_.gif",
+      "title": "The formaldehyde (methanal) forms a mix of 37% in water, which is called formalin, used in corpses conservation. The formaldehyde’s molecular formula and its main chemical function are:",
+      "description": "",
+      "answer": 1,
+      "alternatives": [
+        "CH\u2082O, carboxylic acid",
+        "CH\u2082O, aldehyde",
+        "C\u2082H\u2084, hydrocarbon (alkene)",
+        "C\u2082H\u2084, aldehyde"
+      ]
+    },
+    {
+      "image": "https://media.tenor.com/images/6b23fee188348871e7ff57a69fa42a1f/tenor.gif",
+      "title": "The number of moles of carbon atoms in Octane (gasoline’s main component) is: ",
+      "description": "",
+      "answer": 0,
+      "alternatives": [
+        "8",
+        "6",
+        "4",
+        "2"
+      ]
+    },
+    {
+      "image": "https://i.pinimg.com/originals/be/c6/b6/bec6b6ac2b9abb0d5ddb80128894a6b8.gif",
+      "title": "The chemical functions of ethanol, acetone, butanal, methylamine are, respectively:",
+      "description": "",
+      "answer": 0,
+      "alternatives": [
+        "Alcohols, ketones, aldehydes, amines",
+        "Alcohols, aldehydes, ketones, amines",
+        "Phenols, hydrocarbons, alkenes, alkynes",
+        "Amines, ketones, aldehydes, alcohols"
+      ]
+    }
+  ],
+  "external": [
+    "https://aluraquiz-base.alura-challenges.vercel.app/",
+    "https://aluraquiz-css.omariosouto.vercel.app/"
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#7FB5AA",
+      "secondary": "#7FB5AA",
+      "mainBg": "#CEE7E0",
+      "contrastText": "#000000",
+      "wrong": "#FF6F61",
+      "success": "#4CAF50"
+    },
+    "borderRadius": "4px"
+  }
+}
