@@ -18,3 +18,11 @@ yarn prisma migrate dev
 ## Github OAuth
 
 Gerar um novo app OAuth no [Github Developers](https://github.com/settings/developers) e pegar os dados de `GITHUB_CLIENT_ID` e `GITHUB_CLIENT_SECRET`
+
+## Classe default de erros
+
+- Express precisa da seguinte biblioteca
+  
+```
+yarn add express-async-errors
+```

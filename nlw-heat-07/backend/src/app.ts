@@ -1,7 +1,10 @@
 import 'dotenv/config';
 const { GITHUB_CLIENT_ID } = process.env;
 
-import express from 'express';
+import express, { Request, Response, NextFunction } from 'express';
+
+import 'express-async-errors';
+import AppError from './errors/AppError';
 
 import { router } from './routes';
 
@@ -21,6 +24,24 @@ app.get('/signin/callback', (request, response) => {
 
   return response.json(code);
 });
+
+app.use(
+  (error: Error, request: Request, response: Response, _: NextFunction) => {
+    if (error instanceof AppError) {
+      return response.status(error.statusCode).json({
+        status: 'error',
+        message: error.message,
+      });
+    }
+
+    console.error(error);
+
+    return response.status(500).json({
+      status: 'error',
+      message: 'Internal server error',
+    });
+  }
+);
 
 const PORT = 4000;
 app.listen(PORT, () => console.log(`✨ Server is running on PORT ${PORT}`));

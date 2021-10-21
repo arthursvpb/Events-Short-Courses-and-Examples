@@ -11,10 +11,10 @@ class AuthenticateUserController {
     return response.json(result);
   }
 
-  async signIn(request: Request, response: Response) {
-    const { code } = request.body;
+  // async signIn(request: Request, response: Response) {
+  //   const { code } = request.body;
 
-  }
+  // }
 }
 
 export { AuthenticateUserController };

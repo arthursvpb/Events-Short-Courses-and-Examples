@@ -2,6 +2,7 @@ import axios from 'axios';
 import prismaClient from '../prisma';
 
 import { sign } from 'jsonwebtoken';
+import AppError from '../errors/AppError';
 
 const { GITHUB_CLIENT_SECRET, GITHUB_CLIENT_ID, JWT_SECRET } = process.env;
 
@@ -32,6 +33,10 @@ class AuthenticateUserService {
         Accept: 'application/json',
       },
     });
+
+    if (!access_token) {
+      throw new AppError(`Invalid or expired access token`, 401);
+    }
 
     const response = await axios.get<IUserResponse>(
       'https://api.github.com/user',
