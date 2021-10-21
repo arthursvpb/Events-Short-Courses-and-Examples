@@ -6,6 +6,7 @@
     "forceConsistentCasingInFileNames": true,
     // Com o TS, o strict do JS não é muito utilizado
     "strict": false,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "typeRoots": ["./src/@types", "node_modules/@types"]
   }
 }

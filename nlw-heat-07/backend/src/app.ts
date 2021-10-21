@@ -2,13 +2,30 @@ import 'dotenv/config';
 const { GITHUB_CLIENT_ID } = process.env;
 
 import express, { Request, Response, NextFunction } from 'express';
+import http from 'http';
+import cors from 'cors';
 
 import 'express-async-errors';
 import AppError from './errors/AppError';
 
+import { Server } from 'socket.io';
+
 import { router } from './routes';
 
 const app = express();
+
+app.use(cors());
+
+// HTTP irá subir o servidor ao invés do app
+// Necessário para usar o Socket.io
+const httpServer = http.createServer(app);
+// Configuração do Socket.io
+const io = new Server(httpServer, { cors: { origin: '*' } });
+
+// Evento de conexão para saber se um usuário se conectou
+io.on('connection', socket => {
+  console.log(`Conected: ${socket.id}`);
+});
 
 app.use(express.json());
 app.use(router);
@@ -43,5 +60,4 @@ app.use(
   }
 );
 
-const PORT = 4000;
-app.listen(PORT, () => console.log(`✨ Server is running on PORT ${PORT}`));
+export { httpServer, io };
