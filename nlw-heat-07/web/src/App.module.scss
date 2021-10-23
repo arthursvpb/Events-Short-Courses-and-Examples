@@ -1,0 +1,12 @@
+.contentWrapper {
+  // Estilização inicial
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+
+  // Sistema de grid
+  display: grid;
+  grid-template-columns: 1fr 453px;
+  column-gap: 120px;
+  position: relative;
+}
