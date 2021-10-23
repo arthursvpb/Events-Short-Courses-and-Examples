@@ -27,3 +27,8 @@ export function App() {
   );
 }
 ```
+
+## Context API
+
+- Deixar informações acessíveis a todos os componentes da aplicação
+- Alternativa ao REDUX
