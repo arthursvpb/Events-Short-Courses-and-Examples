@@ -1,5 +1,6 @@
-# NLW Heat React
+# React Heat Front-end
 
+#Protagonistas
 ## Vite
 
 - Alternativa ao webpack
@@ -72,4 +73,11 @@ ReactDOM.render(
 ```tsx
 // Recuperamos o contexto com o useContext
 const { githubOAuthUrl, user } = useContext(AuthContext);
+```
+
+## Socket IO
+
+```sh
+# Cliente para ouvir em tempo real
+yarn add socket.io-client
 ```
