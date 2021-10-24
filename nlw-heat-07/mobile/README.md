@@ -32,3 +32,13 @@ yarn add react-native-svg-transformer -D
 ## React Native X Helper
 
 - Ajuda a lidar com espaçamentos
+
+## Moti
+
+- Animações de forma declarativa
+
+```sh
+yarn add moti
+
+expo install react-native-reanimated
+```
