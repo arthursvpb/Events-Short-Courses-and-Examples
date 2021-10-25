@@ -42,3 +42,31 @@ yarn add moti
 
 expo install react-native-reanimated
 ```
+
+## Autenticação
+
+- Será criado uma pasta de `hooks` para a autenticação integrado ao Context API
+- É criada uma função para conseguirmos usar o contexto como um hook
+
+```tsx
+// Function to use Auth as a hook
+function useAuth() {
+  const context = useContext(AuthContext);
+
+  return context;
+}
+```
+
+### AuthSession
+
+- Criar sessão e redirecionar para o github
+
+```sh
+expo install expo-auth-session expo-random
+```
+
+- Guardar valores obtivos de token e usuário:
+
+```sh
+expo install @react-native-async-storage/async-storage
+```
