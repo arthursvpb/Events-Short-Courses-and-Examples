@@ -1,5 +1,7 @@
 # React Native Heat Mobile
 
+#ImaginarConstruirTransformar
+
 ## Expo
 
 ```sh
@@ -69,4 +71,12 @@ expo install expo-auth-session expo-random
 
 ```sh
 expo install @react-native-async-storage/async-storage
+```
+
+## Socket IO
+
+- Client do socket IO para poder usar o real time
+
+```sh
+yarn add socket.io-client
 ```

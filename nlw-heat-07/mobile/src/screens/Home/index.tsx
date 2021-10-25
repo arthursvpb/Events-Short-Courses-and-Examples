@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, KeyboardAvoidingView, Platform } from 'react-native';
 
 import { useAuth } from '../../hooks/auth';
 
@@ -14,12 +14,17 @@ export function Home() {
   const { user } = useAuth();
 
   return (
-    // View => Equivalente às divs
-    <View style={styles.container}>
-      <Header />
-      <MessageList />
-      
-      {user ? <SendMessageForm /> : <SignInBox />}
-    </View>
+    <KeyboardAvoidingView
+      style={{ flex: 1 }}
+      behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+    >
+      {/* View => Equivalente às divs */}
+      <View style={styles.container}>
+        <Header />
+        <MessageList />
+
+        {user ? <SendMessageForm /> : <SignInBox />}
+      </View>
+    </KeyboardAvoidingView>
   );
 }
