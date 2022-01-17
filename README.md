@@ -1,2 +1,3 @@
-# Events
-Repository dedicated to keep code of my attended events, including notes and studies.
+# Events-Short-Courses-and-Examples
+
+Repository dedicated to keep code of my attended events, short courses and quick examples.
